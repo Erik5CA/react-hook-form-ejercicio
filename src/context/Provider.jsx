@@ -2,12 +2,11 @@
 import { useState } from "react";
 import Contexto from "./Contexto";
 
-const misDatos = [];
-
 const Provider = ({ children }) => {
+  const [misDatos, setMisDatos] = useState([]);
   const [etapas, setEtapas] = useState(0);
   return (
-    <Contexto.Provider value={{ etapas, setEtapas, misDatos }}>
+    <Contexto.Provider value={{ etapas, setEtapas, misDatos, setMisDatos }}>
       {children}
     </Contexto.Provider>
   );
