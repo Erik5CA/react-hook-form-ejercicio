@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+  padding: 5px 6px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  outline: none;
+  box-shadow: 0 0 2px gray;
+  background-color: aliceblue;
+  flex: 1;
+  color: black;
+}
+
+.pregunta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  & label {
+    width: 90px;
+  }
+}
+
+.aviso {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.274);
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  width: max-content;
+  font-size: 0.8em;
+}
+
+.resumen {
+  color: rgb(10, 245, 10);
+  background-color: rgba(19, 192, 19, 0.274);
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  width: max-content;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
